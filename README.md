@@ -33,22 +33,26 @@ selenium-python-project/
   python tests/loginTest.py
 
 Page Object Model (POM) Design
+
 This project follows the POM pattern by separating:
 Page classes (pageObjects/) that encapsulate element locators and interaction methods.
 Test scripts (tests/) that import page classes to execute test flows.
 
 Advantages of POM:
+
 Better code readability and maintenance.
 Reusable page methods across multiple tests.
 Easier updates when UI elements change.
 
 What I Learned / Implemented
+
 Design and implement Page Object Model in Selenium with Python.
 Structure test suites for login, product browsing, and cart management.
 Centralize driver setup and teardown using testRunner.py.
 Handle locators and UI interactions efficiently using reusable methods.
 
 Next Steps / Enhancements
+
 Add reporting (e.g., HTML or Allure reports) for cleaner test summaries.
 Integrate with CI/CD services (e.g., GitHub Actions) to auto-run tests on commits.
 Implement data-driven testing using JSON, CSV, or Excel for parameterized scenarios.
@@ -56,6 +60,7 @@ Introduce cross-browser testing (Chrome, Firefox, etc.).
 Handle dynamic elements with improved wait strategies (explicit wait, retry logic).
 
 Manual Run Example
+
 Below is what running all tests might look like:
 $ python testRunner.py
 [INFO] Starting Selenium tests...
